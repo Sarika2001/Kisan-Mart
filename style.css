@@ -8,6 +8,7 @@
 }
 html{
     font-size: 67%;
+    scroll-behavior: smooth;
 }
 .hamburger-menu{
     width: 3rem;
@@ -56,6 +57,7 @@ html{
     background-color: rgba(0,0,0,0.8);
     overflow: hidden; /*To get rid of scroll bar while animation*/
     z-index: 1;
+    
 }
 .img-wrapper img{
     height: 100%;
@@ -523,3 +525,45 @@ html{
     margin-top: 2%;
     font-size: 2rem;
   }
+
+  /* cookies */
+.cookie_box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.hide {
+    display: none;
+}
+
+.cookie_box{
+  width: 100%;
+  height: 12%;
+}
+.cookie_box p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 22px;
+}
+
+.cookie_box button {
+  padding: 8px 25px;
+  background: #c29525;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.cookie_box button:focus {
+  background: black;
+}
+    
