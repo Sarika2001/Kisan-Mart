@@ -219,21 +219,18 @@
 
           <form>
             <div class="input-group">
-              <input type="text" class="field" >
-              <label class="input-label">Full Name</label>
+              <input type="text" class="field" required placeholder="Full name">
             </div>
 
             <div class="input-group">
-              <input type="text" class="field">
-              <label class="input-label">Email</label>
+              <input type="text" class="field" required placeholder="Email ID">
             </div>
             
             <div class="input-group">
-              <textarea class="field"></textarea>
-              <label class="message">Message</label>
+              <textarea class="field" required placeholder="Message"></textarea>
             </div>
             
-            <input type="submit" class="submit-btn" value="Submit">
+            <input type="submit" class="submit-btn" id="submit" value="Submit">
 
           </form>
         </div>
@@ -243,16 +240,22 @@
 
   <!-- Cookies Message and button -->
   <div class="cookie_box" id="cookie_box">
-   
     <p>Kisan Mart can store cookies on your browser for better Experience.For more information Read our <a href=# cookie policy></a>
-        <a href="#">Cookie Policy</a>
+        <a href="cookies.html">Cookie Policy</a>
     </p>
     <br>
     <button id="activeBtn">Accept all cookies</button>
 </div>
-<!-- CHANGE 02-->
-<!-- CHANGE for Test branch-->
   <script src="script.js"></script>
-</body>
+  <script>
 
+     var currentdate = new Date(); //Custom object for date
+         var datetime = "Cookies are set on " + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " @ "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+  </script>
+</body>
 </html>
